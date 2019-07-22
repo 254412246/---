@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+    <meta charset="utf8">
+    <title>个人简历</title>
+    <link rel="stylesheet" href="./a.css">
+    <script src="//at.alicdn.com/t/font_451045_32zbfqegtq3t0529.js"></script>
+    <style type="text/css">
+      .icon {
+        width: 1em;
+        height: 1em;
+        vertical-align: -0.15em;
+        fill: currentColor;
+        overflow: hidden;
+      }
+    </style>
+</head>
+    <div class="topNavBar">
+        <div class="topnavbar-inner clearfix">
+            <a class="logo" href="#" alt="logo">
+                <span class="rs">RS</span><span class="card">card</span>
+            </a>
+            <nav>
+                <a href="#">关于</a>
+                <a href="#">技能</a>
+                <a href="#">作品</a>
+                <a href="#">博客</a>
+                <a href="#">日历</a>
+                <a href="#">联系方式</a>
+                <a href="#">其他</a>
+            </nav>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="mask"></div>
+    </div>
+    <main>
+        <div class="usercard clearfix">
+            <div class="picture ">
+                <img src="./img/touxiang.jpg" alt="头像">
+            </div>
+            <div class="text">
+                <div class="profilee">
+                    <!--主要内容-->
+                    <span class="welcome">Hello
+                        <span class="triangle"></span>
+                    </span>
+                    <h1>大帅</h1>
+                    <p>前端新手</p>
+                    <hr>
+                    <dl>
+                        <dt>年龄</dt>
+                        <dd>24</dd>
+                        <dt>所在城市</dt>
+                        <dd>地球</dd>
+                        <dt>邮箱</dt>
+                        <dd>10086@qq.com</dd>
+                        <dt>电话</dt>
+                        <dd>13373333333</dd>
+                    </dl>
+                </div>
+            </div>
+            <footer class="media clearfix">
+                    <a href="#">
+                      <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-github"></use>
+                      </svg>
+                    </a>
+                    <a href="#">
+                      <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-Ankerwebicon-"></use>
+                      </svg>
+                    </a>
+                    <a href="#">
+                      <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-weibo"></use>
+                      </svg>
+                    </a>
+                  </footer>
+        </div>
+        <p style="text-align: center">
+            <!--让a标签居中-->
+            <a class="button" href="./resume.pdf" target="_blank" download>PDF文档下载</a>
+            <!--新开窗口下载PDF-->
+        </p>
+        <p class="self-introduction">
+            这是一段简历的内容<br>
+            可以写一些自己的经历
+        </p>
+    </main>
+    <section class="skills">
+        <h2>技能</h2>
+        <ol class="clearfix">
+            <li>
+                <h3>
+                    HTML 5 & css 3
+                </h3>
+                <div class="progressbar">
+                    <div class="progress"></div>
+                </div>
+            </li>
+            <li>
+                <h3>
+                    JavaScript
+                </h3>
+                <div class="progressbar">
+                    <div class="progress" style="width: 70%"></div>
+                </div>
+            </li>
+            <li>
+                <h3>
+                    JQuery
+                </h3>
+                <div class="progressbar">
+                    <div class="progress" style="width: 50%"></div>
+                </div>
+            </li>
+            <li>
+                <h3>
+                    vue.js
+                </h3>
+                <div class="progressbar">
+                    <div class="progress" style="width: 90%"></div>
+
+                </div>
+            </li>
+            <li>
+                <h3>
+                    React,js
+                </h3>
+                <div class="progressbar">
+                    <div class="progress" style="width: 20%"></div>
+
+                </div>
+            </li>
+            <li>
+                <h3>
+                    Node.js
+                </h3>
+                <div class="progressbar">
+                    <div class="progress" style="width: 60%"></div>
+
+                </div>
+            </li>
+        </ol>
+    </section>
+    <section class="zuopingji">
+        <h2>作品集</h2>
+        <nav>
+            <ol  class="clearfix">
+                <li id="bar1">所有</li>
+                <li id="bar2">框架</li>
+                <li id="bar3">原生JS&CSS</li>
+            </ol>
+            <div id="portfoliobar" class="bar state-1">
+                <div class="bar-innre"></div>
+            </div>
+        </nav>
+        <script>
+        bar1.onclick= function(){
+            portfoliobar.className='bar state-1'
+        }
+        bar2.onclick= function(){
+            portfoliobar.className='bar state-2'
+        }
+        bar3.onclick= function(){
+            portfoliobar.className='bar state-3'
+        }
+        </script>
+        <div class="works">
+            <div class="big" style="top: 0; left:0px;">
+                <img src="./img/1.jpg" alt="作品1">
+            </div>
+            <div class="small" style="top: 0; left:645px;">
+                <img src="./img/2.jpg" alt="作品2">
+            </div>
+            <div class="small" style="top: 312px; left:645px;">
+                <img src="./img/3.jpg" alt="作品3">
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
